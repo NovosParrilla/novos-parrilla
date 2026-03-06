@@ -4,239 +4,195 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Novos Parrilla | La Mejor Parrilla</title>
+<title>Novos Parrilla</title>
 
 <style>
 
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#f5f5f5;
+background:#fafafa;
 }
 
-/* HERO */
-
-.hero{
-background:url("https://images.unsplash.com/photo-1558030006-450675393462") center/cover;
-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
+header{
+background:#111;
+color:white;
 text-align:center;
-color:white;
+padding:40px 20px;
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:10px;
+header h1{
+font-size:40px;
+margin:0;
 }
 
-.hero p{
-font-size:20px;
+header p{
+font-size:18px;
+margin-top:10px;
 }
 
-.btn{
-background:#25D366;
-color:white;
+.boton{
+display:inline-block;
+margin-top:20px;
 padding:15px 25px;
+background:#ff6b00;
+color:white;
 text-decoration:none;
 border-radius:5px;
-font-size:18px;
+font-weight:bold;
 }
 
-.btn:hover{
-background:#1ebc59;
-}
-
-/* SECCIONES */
-
-.section{
+.seccion{
 padding:60px 20px;
 text-align:center;
 }
 
-.section h2{
-font-size:36px;
-margin-bottom:30px;
-}
-
-/* PLATOS */
-
-.platos{
+.menu{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:20px;
+margin-top:30px;
 }
 
 .plato{
 background:white;
 border-radius:10px;
-width:250px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
+width:250px;
+padding:20px;
 }
 
 .plato img{
 width:100%;
-border-radius:10px 10px 0 0;
+border-radius:10px;
 }
 
-.plato h3{
-margin:10px;
+.visitanos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:40px;
 }
 
-/* MENU DIA */
-
-.menu{
-background:#0f5132;
-color:white;
+.sede{
+background:white;
+padding:25px;
+width:300px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* FOOTER */
+.sede h3{
+margin-top:0;
+color:#ff6b00;
+}
 
-.footer{
+footer{
 background:#111;
 color:white;
-padding:40px;
+text-align:center;
+padding:30px;
+margin-top:40px;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- HERO -->
+<header>
 
-<section class="hero">
+<h1>🔥 Novos Parrilla</h1>
 
-<div>
+<p>La mejor parrilla colombiana y comidas rápidas</p>
 
-<h1>La Mejor Parrilla de Villas de Granada 🔥</h1>
-
-<p>Carnes jugosas y el auténtico sabor colombiano</p>
-
-<br>
-
-<a class="btn" href="https://wa.me/573113095888">
+<a class="boton" href="https://wa.me/573113095888">
 Pedir por WhatsApp
 </a>
 
-</div>
+</header>
 
-</section>
 
-<!-- PLATOS -->
+<section class="seccion">
 
-<section class="section">
+<h2>🍽️ Nuestros Platos Destacados</h2>
 
-<h2>Platos Destacados</h2>
-
-<div class="platos">
+<div class="menu">
 
 <div class="plato">
 <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
 <h3>Bandeja Paisa</h3>
-<p>Tradición colombiana en un plato delicioso.</p>
-</div>
-
-<div class="plato">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
-<h3>Parrillada Mixta</h3>
-<p>Una combinación perfecta de carnes a la parrilla.</p>
-</div>
-
-<div class="plato">
-<img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
-<h3>Pollo a la Parrilla</h3>
-<p>Jugoso, dorado y lleno de sabor.</p>
+<p>Uno de nuestros platos más pedidos.</p>
 </div>
 
 <div class="plato">
 <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
-<h3>Hamburguesa Artesanal</h3>
-<p>Carne jugosa y pan suave.</p>
+<h3>Hamburguesa Parrillera</h3>
+<p>Carne a la parrilla con sabor único.</p>
+</div>
+
+<div class="plato">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+<h3>Churrasco</h3>
+<p>Carne jugosa acompañada de papas y ensalada.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- MENU DEL DIA -->
 
-<section class="section menu">
 
-<h2>Menú del Día</h2>
+<section class="seccion" style="background:#f3f3f3">
+
+<h2>📍 Visítanos</h2>
+
+<div class="visitanos">
+
+<div class="sede">
+
+<h3>Sede Villas de Granada</h3>
 
 <p>
-
-Incluye proteína, arroz, ensalada, sopa o fruta y bebida del día.
-
+Calle 78 No.112D - 12
 </p>
 
-<br>
-
-<a class="btn" href="https://wa.me/573113095888">
-
-Preguntar menú del día
-
-</a>
-
-</section>
-
-<!-- EXPERIENCIA -->
-
-<section class="section">
-
-<h2>Vive la Experiencia Novos Parrilla</h2>
-
 <p>
-
-Ambiente familiar, ingredientes frescos y el mejor sabor de parrilla.
-
+📞 311 309 5888
 </p>
 
-</section>
-
-<!-- UBICACION -->
-<section id="ubicacion" class="section">
-
-<h2>Nuestras Sedes</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>𝐒𝐞𝐝𝐞 𝐕𝐢𝐥𝐥𝐚𝐬 𝐝𝐞 𝐆𝐫𝐚𝐧𝐚𝐝𝐚</h3>
-
 <p>
-📍 Calle 78 No.112D - 12
-<br><br>
-📲 311 309 5888
-<br><br>
 🕒 11:00 AM – 10:00 PM
 </p>
 
-<a class="btn" href="https://wa.me/573113095888">
-Pedir por WhatsApp
+<a class="boton" href="https://wa.me/573113095888">
+Escribir por WhatsApp
 </a>
 
 </div>
 
 
-<div class="card">
 
-<h3>𝐒𝐞𝐝𝐞 𝐂𝐚𝐫𝐥𝐨𝐬 𝐋𝐥𝐞𝐫𝐚𝐬</h3>
+<div class="sede">
+
+<h3>Sede Carlos Lleras</h3>
 
 <p>
-📍 Cra 70 No.22D - 57
-<br><br>
-📲 322 711 9110
-<br><br>
+Cra 70 No.22D - 57
+</p>
+
+<p>
+📞 322 711 9110
+</p>
+
+<p>
 🕒 11:00 AM – 10:00 PM
 </p>
 
-<a class="btn" href="https://wa.me/573227119110">
-Pedir por WhatsApp
+<a class="boton" href="https://wa.me/573227119110">
+Escribir por WhatsApp
 </a>
 
 </div>
@@ -244,11 +200,15 @@ Pedir por WhatsApp
 </div>
 
 </section>
-<!-- FOOTER -->
 
-<footer class="footer">
+
+<footer>
 
 <p>© 2026 Novos Parrilla</p>
+
+<p>
+Síguenos en redes sociales
+</p>
 
 </footer>
 
