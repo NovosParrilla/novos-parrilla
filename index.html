@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,50 +22,40 @@ color:white;
 /* HERO */
 
 .hero{
-background:url('https://images.unsplash.com/photo-1544025162-d76694265947') center/cover no-repeat;
+background:url('https://images.unsplash.com/photo-1600891964092-4316c288032e') center/cover;
 height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
 }
 
 .hero h1{
 font-size:60px;
 margin:0;
-background:rgba(0,0,0,0.5);
-padding:10px 20px;
-border-radius:10px;
 }
 
 .hero p{
 font-size:22px;
-background:rgba(0,0,0,0.5);
-padding:5px 15px;
-border-radius:10px;
 }
 
-/* BOTONES */
-
-.btn, .boton{
-background:#c40000;
+.btn{
+background:#d60000;
 color:white;
-padding:14px 28px;
-border-radius:6px;
+padding:15px 30px;
+border-radius:5px;
 text-decoration:none;
 font-weight:bold;
 margin-top:20px;
 display:inline-block;
-transition:0.3s;
 }
 
-.btn:hover, .boton:hover{
+.btn:hover{
 background:#ff0000;
 }
 
-/* MENÚ DEL DÍA */
+/* MENÚ DEL DIA */
 
 .menu-dia{
 padding:60px 20px;
@@ -92,7 +84,6 @@ font-size:18px;
 font-size:35px;
 color:#ff3b3b;
 margin-top:15px;
-font-weight:bold;
 }
 
 /* GALERIA */
@@ -115,17 +106,61 @@ width:100%;
 border-radius:10px;
 }
 
-/* CONTACTO */
+/* PLATO DESTACADO */
 
-.contacto{
+.destacado{
 padding:70px 20px;
-background:#1b1b1b;
+background:#141414;
 text-align:center;
 }
 
-.contacto h2{
-margin-bottom:40px;
-font-size:35px;
+.destacado-box{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+max-width:1000px;
+margin:auto;
+}
+
+.destacado-box img{
+width:350px;
+border-radius:10px;
+}
+
+.destacado-info{
+max-width:400px;
+}
+
+/* RESEÑAS */
+
+.reviews{
+padding:70px 20px;
+text-align:center;
+background:#1a1a1a;
+}
+
+.reviews-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.review{
+background:#222;
+padding:25px;
+border-radius:10px;
+}
+
+/* CONTACTO */
+
+.contacto{
+background:#1a1a1a;
+padding:70px 20px;
+text-align:center;
 }
 
 .visitanos{
@@ -133,44 +168,51 @@ display:flex;
 justify-content:center;
 gap:40px;
 flex-wrap:wrap;
+margin-top:40px;
 }
 
 .sede{
 background:#222;
 padding:30px;
 border-radius:10px;
-width:320px;
-box-shadow:0 5px 20px rgba(0,0,0,0.5);
+width:350px;
 }
 
 .sede h3{
 color:#ff3b3b;
 }
 
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:30px;
-background:#000;
-}
-
-.redes{
+.boton{
+background:#d60000;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
 margin-top:10px;
 }
 
-.redes a{
+/* REDES */
+
+.redes{
+margin-top:20px;
+}
+
+.redes i{
 color:white;
 font-size:18px;
-margin:0 8px;
-transition:0.3s;
+margin:8px;
 }
 
-.redes a:hover{
-color:#ff3b3b;
+/* FOOTER */
+
+footer{
+background:#000;
+padding:30px;
+text-align:center;
 }
 
-/* BOTON FLOTANTE */
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -178,16 +220,21 @@ bottom:20px;
 right:20px;
 background:#25d366;
 color:white;
-padding:16px 18px;
-border-radius:50px;
-font-size:22px;
+padding:18px;
+border-radius:50%;
+font-size:24px;
 text-decoration:none;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
+animation:flotar 2s infinite;
 }
 
-.whatsapp:hover{
-background:#1ebe5d;
+@keyframes flotar{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
 }
+
+/* MENSAJE FLOTANTE */
 
 .mensaje-flotante{
 position:fixed;
@@ -207,19 +254,17 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 <body>
 
-<!-- HERO -->
-
 <section class="hero">
 
 <h1>Novos Parrilla</h1>
 
 <p>La mejor parrilla para disfrutar con amigos y familia</p>
 
-<a class="btn" href="https://wa.me/573113095888">Reservar Ahora</a>
+<a class="btn" href="https://wa.me/573113095888">
+Reservar Ahora
+</a>
 
 </section>
-
-<!-- MENU DEL DIA -->
 
 <section class="menu-dia">
 
@@ -240,8 +285,6 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 </section>
 
-<!-- GALERIA -->
-
 <section class="galeria">
 
 <h2>Nuestros Platos</h2>
@@ -254,13 +297,64 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 <img src="https://images.unsplash.com/photo-1604908176997-4315f5c6d3db">
 
-<img src="https://images.unsplash.com/photo-1558030006-450675393462">
+</div>
+
+</section>
+
+<section class="destacado">
+
+<h2>🔥 Plato Destacado</h2>
+
+<div class="destacado-box">
+
+<img src="https://images.unsplash.com/photo-1604908176997-4315f5c6d3db">
+
+<div class="destacado-info">
+
+<h3>Bandeja Paisa Especial</h3>
+
+<p>
+Disfruta nuestra deliciosa bandeja paisa con chicharrón crocante,
+frijoles, arroz, huevo, carne molida, aguacate y arepa.
+</p>
+
+<a class="btn" href="https://wa.me/573113095888">
+Pedir ahora
+</a>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- CONTACTO -->
+<section class="reviews">
+
+<h2>⭐ Lo que dicen nuestros clientes</h2>
+
+<div class="reviews-grid">
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>La mejor parrilla del sector, la carne espectacular.</p>
+<strong>- Carlos M.</strong>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>El menú del día es delicioso y muy completo.</p>
+<strong>- Laura G.</strong>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Excelente atención y ambiente familiar.</p>
+<strong>- Andrés R.</strong>
+</div>
+
+</div>
+
+</section>
 
 <section class="contacto">
 
@@ -304,25 +398,23 @@ Escribir por WhatsApp
 
 </section>
 
-<!-- FOOTER -->
-
 <footer>
 
-<p>© 2026 NOVOS Parrilla - Todos los derechos reservados</p>
+<p>© 2026 NOVOS Parrilla - Bogotá, Colombia</p>
 
-<p>Bogotá, Colombia</p>
+<p>Síguenos en redes sociales</p>
 
 <div class="redes">
 
-<a href="https://www.facebook.com/NovosRestaurante" target="_blank">
+<a href="https://www.facebook.com/NovosRestaurante">
 <i class="fab fa-facebook"></i>
 </a>
 
-<a href="https://www.instagram.com/novos.parrilla/" target="_blank">
+<a href="https://www.instagram.com/novos.parrilla/">
 <i class="fab fa-instagram"></i>
 </a>
 
-<a href="https://www.tiktok.com/@novosparrilla" target="_blank">
+<a href="https://www.tiktok.com/@novosparrilla">
 <i class="fab fa-tiktok"></i>
 </a>
 
@@ -330,15 +422,16 @@ Escribir por WhatsApp
 
 </footer>
 
-<!-- MENSAJE FLOTANTE -->
-
 <div class="mensaje-flotante">
-🔥 ¡Pregunta por nuestro Menú del Día!
+🔥 Pregunta por nuestro Menú del Día
 </div>
 
 <a class="whatsapp" href="https://wa.me/573113095888">
+
 <i class="fab fa-whatsapp"></i>
+
 </a>
 
 </body>
+
 </html>
