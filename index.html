@@ -20,36 +20,46 @@ color:white;
 /* HERO */
 
 .hero{
-background:url('https://images.unsplash.com/photo-1555992336-cbfebea91dcd') center/cover;
+background:url('https://images.unsplash.com/photo-1544025162-d76694265947') center/cover no-repeat;
 height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:20px;
 }
 
 .hero h1{
 font-size:60px;
 margin:0;
+background:rgba(0,0,0,0.5);
+padding:10px 20px;
+border-radius:10px;
 }
 
 .hero p{
 font-size:22px;
+background:rgba(0,0,0,0.5);
+padding:5px 15px;
+border-radius:10px;
 }
 
-.btn{
-background:#d60000;
+/* BOTONES */
+
+.btn, .boton{
+background:#c40000;
 color:white;
-padding:15px 30px;
-border-radius:5px;
+padding:14px 28px;
+border-radius:6px;
 text-decoration:none;
 font-weight:bold;
 margin-top:20px;
 display:inline-block;
+transition:0.3s;
 }
 
-.btn:hover{
+.btn:hover, .boton:hover{
 background:#ff0000;
 }
 
@@ -82,6 +92,7 @@ font-size:18px;
 font-size:35px;
 color:#ff3b3b;
 margin-top:15px;
+font-weight:bold;
 }
 
 /* GALERIA */
@@ -95,6 +106,8 @@ text-align:center;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
+max-width:1100px;
+margin:auto;
 }
 
 .grid img{
@@ -105,15 +118,56 @@ border-radius:10px;
 /* CONTACTO */
 
 .contacto{
-background:#1a1a1a;
-padding:60px 20px;
+padding:70px 20px;
+background:#1b1b1b;
 text-align:center;
 }
 
-.redes i{
+.contacto h2{
+margin-bottom:40px;
+font-size:35px;
+}
+
+.visitanos{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.sede{
+background:#222;
+padding:30px;
+border-radius:10px;
+width:320px;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+
+.sede h3{
+color:#ff3b3b;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#000;
+}
+
+.redes{
+margin-top:10px;
+}
+
+.redes a{
 color:white;
-font-size:20px;
-margin:10px;
+font-size:18px;
+margin:0 8px;
+transition:0.3s;
+}
+
+.redes a:hover{
+color:#ff3b3b;
 }
 
 /* BOTON FLOTANTE */
@@ -124,9 +178,9 @@ bottom:20px;
 right:20px;
 background:#25d366;
 color:white;
-padding:15px 20px;
+padding:16px 18px;
 border-radius:50px;
-font-size:20px;
+font-size:22px;
 text-decoration:none;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
@@ -153,6 +207,8 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 <body>
 
+<!-- HERO -->
+
 <section class="hero">
 
 <h1>Novos Parrilla</h1>
@@ -162,6 +218,8 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 <a class="btn" href="https://wa.me/573113095888">Reservar Ahora</a>
 
 </section>
+
+<!-- MENU DEL DIA -->
 
 <section class="menu-dia">
 
@@ -175,37 +233,50 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 <p>✔ Acompañamiento</p>
 <p>✔ Bebida incluida</p>
 <p>✔ Sopa / Crema / Fruta</p>
+
 <div class="precio">$18.000</div>
 
 </div>
 
 </section>
+
+<!-- GALERIA -->
+
 <section class="galeria">
 
 <h2>Nuestros Platos</h2>
+
 <div class="grid">
+
 <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+
 <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+
 <img src="https://images.unsplash.com/photo-1604908176997-4315f5c6d3db">
+
+<img src="https://images.unsplash.com/photo-1558030006-450675393462">
 
 </div>
 
 </section>
+
+<!-- CONTACTO -->
+
 <section class="contacto">
-<section class="seccion" style="background:#f3f3f3">
+
 <h2>📍 Visítanos</h2>
+
 <div class="visitanos">
+
 <div class="sede">
+
 <h3>Sede Villas de Granada</h3>
-<p>
-Calle 78 No.112D - 12
-</p>
-<p>
-📞 311 309 5888
-</p>
-<p>
-🕒 11:00 AM – 10:00 PM
-</p>
+
+<p>Calle 78 No.112D - 12</p>
+
+<p>📞 311 309 5888</p>
+
+<p>🕒 11:00 AM – 10:00 PM</p>
 
 <a class="boton" href="https://wa.me/573113095888">
 Escribir por WhatsApp
@@ -214,16 +285,15 @@ Escribir por WhatsApp
 </div>
 
 <div class="sede">
+
 <h3>Sede Carlos Lleras</h3>
-<p>
-Cra 70 No.22D - 57
-</p>
-<p>
-📞 322 711 9110
-</p>
-<p>
-🕒 11:00 AM – 10:00 PM
-</p>
+
+<p>Cra 70 No.22D - 57</p>
+
+<p>📞 322 711 9110</p>
+
+<p>🕒 11:00 AM – 10:00 PM</p>
+
 <a class="boton" href="https://wa.me/573227119110">
 Escribir por WhatsApp
 </a>
@@ -234,33 +304,40 @@ Escribir por WhatsApp
 
 </section>
 
+<!-- FOOTER -->
 
 <footer>
 
-<p>© 2026 NOVOS Parrilla - Todos los derechos reservados
-Bogotá, Colombia</p>
+<p>© 2026 NOVOS Parrilla - Todos los derechos reservados</p>
 
-<p>Síguenos en redes sociales</p>
+<p>Bogotá, Colombia</p>
+
 <div class="redes">
+
 <a href="https://www.facebook.com/NovosRestaurante" target="_blank">
 <i class="fab fa-facebook"></i>
 </a>
+
 <a href="https://www.instagram.com/novos.parrilla/" target="_blank">
 <i class="fab fa-instagram"></i>
 </a>
+
 <a href="https://www.tiktok.com/@novosparrilla" target="_blank">
 <i class="fab fa-tiktok"></i>
 </a>
 
+</div>
 
-</section>
-  
+</footer>
+
+<!-- MENSAJE FLOTANTE -->
+
 <div class="mensaje-flotante">
 🔥 ¡Pregunta por nuestro Menú del Día!
 </div>
+
 <a class="whatsapp" href="https://wa.me/573113095888">
 <i class="fab fa-whatsapp"></i>
-
 </a>
 
 </body>
