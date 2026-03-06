@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
@@ -16,7 +17,6 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial;
-scroll-behavior:smooth;
 }
 
 body{
@@ -24,41 +24,12 @@ background:#0f0f0f;
 color:white;
 }
 
-/* NAVBAR */
-
-.navbar{
-position:fixed;
-top:0;
-width:100%;
-background:#000;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-z-index:1000;
-}
-
-.navbar h2{
-color:#fff;
-}
-
-.navbar a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-size:14px;
-}
-
-.navbar a:hover{
-color:#ff3b3b;
-}
-
 /* HERO */
 
 .hero{
-height:100vh;
+height:95vh;
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1600891964092-4316c288032e');
+url('https://images.unsplash.com/photo-1544025162-d76694265947');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -66,11 +37,10 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
 }
 
 .hero h1{
-font-size:70px;
+font-size:65px;
 }
 
 .hero p{
@@ -80,17 +50,16 @@ margin-top:10px;
 
 .btn{
 margin-top:25px;
-background:#e10600;
+background:#d60000;
 padding:16px 35px;
 border-radius:5px;
 text-decoration:none;
 color:white;
 font-weight:bold;
-transition:0.3s;
 }
 
 .btn:hover{
-background:#ff2b2b;
+background:#ff0000;
 }
 
 /* MENU DIA */
@@ -146,6 +115,7 @@ width:100%;
 }
 
 @keyframes slide{
+
 0%{margin-left:0;}
 30%{margin-left:0;}
 
@@ -154,21 +124,22 @@ width:100%;
 
 70%{margin-left:-200%;}
 100%{margin-left:-200%;}
+
 }
 
 /* CONTACTO */
 
 .contacto{
-background:#161616;
-padding:80px 20px;
+background:#1a1a1a;
+padding:70px 20px;
 text-align:center;
 }
 
 .visitanos{
 display:flex;
 flex-wrap:wrap;
-gap:40px;
 justify-content:center;
+gap:40px;
 margin-top:40px;
 }
 
@@ -185,7 +156,7 @@ margin-bottom:10px;
 }
 
 .boton{
-background:#e10600;
+background:#d60000;
 padding:12px 22px;
 color:white;
 text-decoration:none;
@@ -195,25 +166,13 @@ margin-top:15px;
 }
 
 .boton:hover{
-background:#ff2b2b;
-}
-
-/* MAPA */
-
-.mapa{
-margin-top:40px;
-}
-
-iframe{
-width:100%;
-height:350px;
-border:0;
+background:#ff0000;
 }
 
 /* REDES */
 
 .redes{
-margin-top:20px;
+margin-top:15px;
 }
 
 .redes i{
@@ -226,7 +185,7 @@ color:white;
 
 footer{
 background:#000;
-padding:35px;
+padding:40px;
 text-align:center;
 }
 
@@ -234,26 +193,29 @@ text-align:center;
 
 .whatsapp{
 position:fixed;
-bottom:25px;
-right:25px;
+bottom:20px;
+right:20px;
 background:#25d366;
 color:white;
-padding:18px;
+padding:16px;
 border-radius:50%;
-font-size:26px;
+font-size:25px;
 text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,0.4);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
-.mensaje{
+/* MENSAJE */
+
+.mensaje-flotante{
 position:fixed;
-bottom:100px;
-right:25px;
+bottom:90px;
+right:20px;
 background:white;
 color:black;
 padding:12px 18px;
 border-radius:10px;
 font-size:14px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 </style>
@@ -262,30 +224,11 @@ font-size:14px;
 
 <body>
 
-<!-- NAVBAR -->
-
-<div class="navbar">
-
-<h2>Novos Parrilla</h2>
-
-<div>
-
-<a href="#">Inicio</a>
-<a href="#menu">Menú</a>
-<a href="#platos">Platos</a>
-<a href="#contacto">Contacto</a>
-
-</div>
-
-</div>
-
-<!-- HERO -->
-
 <section class="hero">
 
 <h1>Novos Parrilla</h1>
 
-<p>El verdadero sabor de la parrilla colombiana</p>
+<p>La mejor parrilla para disfrutar con amigos y familia</p>
 
 <a class="btn" href="https://wa.me/573113095888">
 Reservar Mesa
@@ -293,19 +236,18 @@ Reservar Mesa
 
 </section>
 
-<!-- MENU DIA -->
+<section class="menu-dia">
 
-<section id="menu" class="menu-dia">
+<h2>🍽️ Menú del Día</h2>
 
-<h2>Menú del Día</h2>
+<p>Disfruta nuestro menú ejecutivo fresco y delicioso de Lunes a Viernes.</p>
 
 <div class="menu-box">
 
-<p>✔ Proteína</p>
-<p>✔ Arroz</p>
-<p>✔ Ensalada o principio</p>
-<p>✔ Sopa o fruta</p>
-<p>✔ Bebida del día</p>
+<p>✔ Proteína a elección</p>
+<p>✔ Acompañamiento</p>
+<p>✔ Bebida incluida</p>
+<p>✔ Sopa / Crema / Fruta</p>
 
 <div class="precio">$18.000</div>
 
@@ -313,9 +255,7 @@ Reservar Mesa
 
 </section>
 
-<!-- CARRUSEL -->
-
-<section id="platos" class="carrusel">
+<section class="carrusel">
 
 <h2>Nuestros Platos</h2>
 
@@ -335,47 +275,45 @@ Reservar Mesa
 
 </section>
 
-<!-- CONTACTO -->
+</section>
 
-<section id="contacto" class="contacto">
+<section class="contacto">
 
-<h2>Visítanos</h2>
+<h2>📍 Visítanos</h2>
 
 <div class="visitanos">
 
 <div class="sede">
 
-<h3>Villas de Granada</h3>
+<h3>Sede Villas de Granada</h3>
 
 <p>Calle 78 No.112D - 12</p>
 
-<p>311 309 5888</p>
+<p>📞 311 309 5888</p>
+
+<p>🕒 11:00 AM – 10:00 PM</p>
 
 <a class="boton" href="https://wa.me/573113095888">
-WhatsApp
+Escribir por WhatsApp
 </a>
 
 </div>
 
 <div class="sede">
 
-<h3>Carlos Lleras</h3>
+<h3>Sede Carlos Lleras</h3>
 
 <p>Cra 70 No.22D - 57</p>
 
-<p>322 711 9110</p>
+<p>📞 322 711 9110</p>
+
+<p>🕒 11:00 AM – 10:00 PM</p>
 
 <a class="boton" href="https://wa.me/573227119110">
-WhatsApp
+Escribir por WhatsApp
 </a>
 
 </div>
-
-</div>
-
-<div class="mapa">
-
-<iframe src="https://maps.google.com/maps?q=bogota&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 
 </div>
 
@@ -383,7 +321,9 @@ WhatsApp
 
 <footer>
 
-<p>© 2026 Novos Parrilla</p>
+<p>© 2026 NOVOS Parrilla - Bogotá, Colombia</p>
+
+<p>Síguenos en redes sociales</p>
 
 <div class="redes">
 
@@ -403,13 +343,16 @@ WhatsApp
 
 </footer>
 
-<div class="mensaje">
-🔥 Pregunta por el menú del día
+<div class="mensaje-flotante">
+🔥 Pregunta por nuestro Menú del Día
 </div>
 
 <a class="whatsapp" href="https://wa.me/573113095888">
+
 <i class="fab fa-whatsapp"></i>
+
 </a>
 
 </body>
+
 </html>
