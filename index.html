@@ -1,445 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Novos Parrilla | Parrilla Colombiana</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>Master Class IA</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
 body{
-background:#0f0f0f;
+font-family: Arial;
+margin:0;
+background:#0a2540;
 color:white;
+text-align:center;
 }
-
-/* HERO */
 
 .hero{
-height:95vh;
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1544025162-d76694265947');
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero h1{
-font-size:65px;
-}
-
-.hero p{
-font-size:22px;
-margin-top:10px;
-}
-
-.btn{
-margin-top:25px;
-background:#d60000;
-padding:16px 35px;
-border-radius:5px;
-text-decoration:none;
-color:white;
-font-weight:bold;
-}
-
-.btn:hover{
-background:#ff0000;
-}
-
-/* MENU DIA */
-
-.menu-dia{
 padding:80px 20px;
-text-align:center;
-background:#161616;
 }
 
-.menu-dia h2{
-font-size:40px;
-color:#ff3b3b;
-}
-
-.menu-box{
-background:#222;
-padding:35px;
-border-radius:10px;
-max-width:400px;
-margin:auto;
-margin-top:20px;
-}
-
-.precio{
-font-size:36px;
-color:#ff3b3b;
-margin-top:15px;
-}
-
-/* MENU DIGITAL */
-
-.menu-digital{
-padding:80px 20px;
-text-align:center;
-background:#141414;
-}
-
-.menu-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-max-width:1000px;
-margin:auto;
-margin-top:30px;
-}
-
-.plato{
-background:#222;
-border-radius:10px;
-padding:15px;
-}
-
-.plato img{
-width:100%;
-border-radius:10px;
-}
-
-.plato p{
-color:#ff3b3b;
-font-weight:bold;
-}
-
-/* CARRUSEL */
-
-.carrusel{
-padding:80px 20px;
-text-align:center;
-}
-
-.slider{
-max-width:900px;
-margin:auto;
-overflow:hidden;
-border-radius:10px;
-}
-
-.slides{
-display:flex;
-width:300%;
-animation:slide 12s infinite;
-}
-
-.slides img{
-width:100%;
-}
-
-@keyframes slide{
-
-0%{margin-left:0;}
-30%{margin-left:0;}
-
-35%{margin-left:-100%;}
-65%{margin-left:-100%;}
-
-70%{margin-left:-200%;}
-100%{margin-left:-200%;}
-
-}
-
-/* CONTACTO */
-
-.contacto{
-background:#1a1a1a;
-padding:70px 20px;
-text-align:center;
-}
-
-.visitanos{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:40px;
-margin-top:40px;
-}
-
-.sede{
-background:#222;
-padding:30px;
-border-radius:10px;
-width:340px;
-}
-
-.sede h3{
-color:#ff3b3b;
-margin-bottom:10px;
-}
-
-.boton{
-background:#d60000;
-padding:12px 22px;
-color:white;
-text-decoration:none;
-border-radius:5px;
-display:inline-block;
-margin-top:15px;
-}
-
-.boton:hover{
-background:#ff0000;
-}
-
-.mapa{
-margin-top:20px;
-}
-
-iframe{
-width:100%;
-height:200px;
-border-radius:10px;
+button{
+background:#00c2ff;
 border:none;
-}
-
-/* FOOTER */
-
-footer{
-background:#000;
-padding:40px;
-text-align:center;
-}
-
-.redes i{
+padding:15px 30px;
 font-size:18px;
-margin:10px;
+border-radius:8px;
 color:white;
+cursor:pointer;
 }
 
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25d366;
-color:white;
-padding:16px;
-border-radius:50%;
-font-size:25px;
-text-decoration:none;
-}
-
-/* ORDENAR */
-
-.ordenar{
-position:fixed;
-bottom:20px;
-left:20px;
-background:#d60000;
-color:white;
-padding:14px 20px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* MENSAJE */
-
-.mensaje-flotante{
-position:fixed;
-bottom:90px;
-right:20px;
+.section{
+padding:60px 20px;
 background:white;
-color:black;
-padding:12px 18px;
-border-radius:10px;
-font-size:14px;
+color:#333;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<section class="hero">
+<div class="hero">
 
-<h1>Novos Parrilla</h1>
+<h1>MASTER CLASS GRATUITA</h1>
 
-<p>La mejor parrilla para disfrutar con amigos y familia</p>
+<h2>Inteligencia Artificial para Emprendedores</h2>
 
-<a class="btn" href="https://wa.me/573113095888">
-Reservar Mesa
-</a>
+<p>Aprende a usar IA para automatizar tu negocio.</p>
 
-</section>
+<p>📅 20 de Marzo | 🕗 7:00 PM</p>
 
-<section class="menu-dia">
-
-<h2>🍽️ Menú del Día</h2>
-
-<p>Disfruta nuestro menú ejecutivo de lunes a viernes.</p>
-
-<div class="menu-box">
-
-<p>✔ Proteína a elección</p>
-<p>✔ Acompañamiento</p>
-<p>✔ Bebida incluida</p>
-<p>✔ Sopa / Crema / Fruta</p>
-
-<div class="precio">$18.000</div>
+<button>Inscríbete ahora</button>
 
 </div>
 
-</section>
+<div class="section">
 
-<section class="menu-digital">
+<h2>¿Qué aprenderás?</h2>
 
-<h2>Nuestro Menú</h2>
-
-<div class="menu-grid">
-
-<div class="plato">
-<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
-<h3>Combo Pareja</h3>
-<p>$42.900</p>
-</div>
-
-<div class="plato">
-<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
-<h3>Punta de Anca</h3>
-<p>$35.000</p>
-</div>
-
-<div class="plato">
-<img src="https://images.unsplash.com/photo-1604908176997-4315f5c6d3db">
-<h3>Combo Hamburguesa de la Casa</h3>
-<p>$23.900</p>
-</div>
+<p>✔ Herramientas de Inteligencia Artificial</p>
+<p>✔ Crear contenido automático</p>
+<p>✔ Automatizar tareas</p>
 
 </div>
-
-</section>
-
-<section class="carrusel">
-
-<h2>Nuestros Platos</h2>
-
-<div class="slider">
-
-<div class="slides">
-
-<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
-<img src="https://images.unsplash.com/photo-1604908176997-4315f5c6d3db">
-<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
-
-</div>
-
-</div>
-
-</section>
-
-<section class="contacto">
-
-<h2>📍 Visítanos</h2>
-
-<div class="visitanos">
-
-<div class="sede">
-
-<h3>Sede Villas de Granada</h3>
-
-<p>Calle 78 No.112D - 12</p>
-
-<p>📞 311 309 5888</p>
-
-<p>🕒 11:00 AM – 10:00 PM</p>
-
-<a class="boton" href="https://wa.me/573113095888">
-Escribir por WhatsApp
-</a>
-
-<div class="mapa">
-
-<iframe src="https://maps.google.com/maps?q=Villas%20de%20Granada%20Bogota&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
-
-</div>
-
-</div>
-
-<div class="sede">
-
-<h3>Sede Carlos Lleras</h3>
-
-<p>Cra 70 No.22D - 57</p>
-
-<p>📞 322 711 9110</p>
-
-<p>🕒 11:00 AM – 10:00 PM</p>
-
-<a class="boton" href="https://wa.me/573227119110">
-Escribir por WhatsApp
-</a>
-
-<div class="mapa">
-
-<iframe src="https://maps.google.com/maps?q=Carlos%20Lleras%20Bogota&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 NOVOS Parrilla - Bogotá, Colombia</p>
-
-<p>Síguenos en redes sociales</p>
-
-<div class="redes">
-
-<a href="https://www.facebook.com/NovosRestaurante">
-<i class="fab fa-facebook"></i>
-</a>
-
-<a href="https://www.instagram.com/novos.parrilla/">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.tiktok.com/@novosparrilla">
-<i class="fab fa-tiktok"></i>
-</a>
-
-</div>
-
-</footer>
-
-<div class="mensaje-flotante">
-🔥 Pregunta por nuestro Menú del Día
-</div>
-
-<a class="whatsapp" href="https://wa.me/573113095888">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-<a class="ordenar" href="https://wa.me/573113095888">
-🍔 Ordenar ahora
-</a>
 
 </body>
-
 </html>
